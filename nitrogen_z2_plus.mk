@@ -25,9 +25,10 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common AOSP-OMS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
+# TARGET_GAPPS_ARCH := arm64
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := nitrogen_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
