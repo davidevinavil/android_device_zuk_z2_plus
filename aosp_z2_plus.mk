@@ -26,6 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common AOSP-OMS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH=arm64
 
 PRODUCT_NAME := aosp_z2_plus
 PRODUCT_DEVICE := z2_plus
