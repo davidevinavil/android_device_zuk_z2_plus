@@ -37,7 +37,7 @@ on charger
     write /sys/devices/soc/74a4900.sdhci/mmc_host/mmc1/clk_scaling/enable 1
     write /sys/devices/soc/${ro.boot.bootdevice}/pm_qos_irq_enable 1
 
-on sys.post_boot.parsed=1
+on property:vendor.post_boot.parsed=1
     # Enable MMC powersaving
     write /sys/devices/soc/${ro.boot.bootdevice}/mmc_host/mmc0/clk_scaling/enable 1
     write /sys/devices/soc/74a4900.sdhci/mmc_host/mmc1/clk_scaling/enable 1
